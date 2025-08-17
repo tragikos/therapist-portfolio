@@ -106,7 +106,9 @@ const dict = {
         'Εμπιστευτικός, χωρίς κριτική χώρος',
         'Διαθέσιμη τηλεθεραπεία',
         'Θέσεις με κλιμακωτή χρέωση (όταν υπάρχουν)'
-      ]
+      ],
+      socialTitle: 'Κοινωνικά δίκτυα',
+      socials: { facebook: 'Facebook', instagram: 'Instagram' }
     },
 
     footer: {
@@ -216,7 +218,9 @@ const dict = {
         'Confidential, judgment‑free space',
         'Telehealth available',
         'Sliding scale spots as available'
-      ]
+      ],
+      socialTitle: 'Social',
+      socials: { facebook: 'Facebook', instagram: 'Instagram' }
     },
 
     footer: {
