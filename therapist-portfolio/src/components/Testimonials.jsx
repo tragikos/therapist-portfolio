@@ -27,7 +27,7 @@ export default function Testimonials() {
 
   const startAuto = useCallback(() => {
     if (count <= 1 || autoIdRef.current) return
-    autoIdRef.current = setInterval(() => go('next'), 6000)
+    autoIdRef.current = setInterval(() => go('next'), 10000)
   }, [count, go])
 
   useEffect(() => {
@@ -80,6 +80,7 @@ export default function Testimonials() {
       <div className="container">
         <h2 className="section-title">{t('testimonials.title')}</h2>
 
+        {/* Carousel spans the full width of the container */}
         <div
           className={`testimonial-carousel ${dragX !== 0 ? 'tc-dragging' : ''}`}
           role="region"
@@ -92,9 +93,7 @@ export default function Testimonials() {
           <figure
             className="quote"
             aria-live="polite"
-            style={{
-              transform: `translateX(${dragX}px)`,
-            }}
+            style={{ transform: `translateX(${dragX}px)` }}
           >
             <blockquote>“{current.text}”</blockquote>
             <figcaption>— {current.author}</figcaption>

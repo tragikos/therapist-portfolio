@@ -401,15 +401,16 @@ textarea{ resize: vertical }
 /* Testimonials carousel controls */
 .testimonial-carousel{
   position: relative;
-  max-width: 820px;
-  margin: 0 auto;
-  touch-action: pan-y; /* allow vertical scroll; we handle horizontal swipe */
+  width: 100%;          /* fill container width */
+  max-width: 100%;      /* no extra cap inside container */
+  margin: 0;            /* align with container edges */
+  touch-action: pan-y;  /* allow vertical scroll; we handle horizontal swipe */
 }
 .quote{
   background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
   border: 1px solid rgba(255,255,255,.08);
   border-radius: var(--radius);
-  padding: 16px;
+  padding: clamp(14px, 3vw, 24px);
   box-shadow: var(--shadow-1);
   transition: transform .18s ease; /* smooth snap-back after swipe */
 }
@@ -424,6 +425,7 @@ textarea{ resize: vertical }
   justify-content: space-between;
   transform: translateY(-50%);
   pointer-events: none;
+  padding: 0 6px; /* keep arrows inside container padding */
 }
 .tc-prev, .tc-next{
   pointer-events: auto;
