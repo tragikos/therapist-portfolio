@@ -73,9 +73,22 @@ const dict = {
         {
           text: 'Ένιωσα ασφάλεια και ότι πραγματικά με άκουγαν. Η θεραπεία έγινε η καλύτερη ώρα της εβδομάδας μου.',
           author: 'T., πελάτης/ισσα'
+        },
+        {
+          text: 'Με στήριξε σε μια δύσκολη μετάβαση στη ζωή μου. Ένιωσα ότι έχω πλάνο και κατεύθυνση.',
+          author: 'K., πελάτισσα'
+        },
+        {
+          text: 'Οι συνεδρίες βοήθησαν την οικογένειά μας να επικοινωνεί πιο ουσιαστικά.',
+          author: 'Οικ. Π.'
+        },
+        {
+          text: 'Βρήκα ξανά την αυτοπεποίθησή μου και εργαλεία για να διαχειρίζομαι το άγχος.',
+          author: 'Μ., πελάτης'
         }
       ]
     },
+
 
     contact: {
       title: 'Επικοινωνήστε',
@@ -170,9 +183,22 @@ const dict = {
           text: 'We communicate so much better now. Our relationship feels like a team again.',
           author: 'R. & M., couple'
         },
-        {text: 'I felt safe and truly heard. Therapy became the best hour of my week.', author: 'T., client'}
+        {text: 'I felt safe and truly heard. Therapy became the best hour of my week.', author: 'T., client'},
+        {
+          text: 'Supported me through a difficult life transition. I now have a plan and direction.',
+          author: 'K., client'
+        },
+        {
+          text: 'Family sessions helped us communicate more meaningfully.',
+          author: 'The P. family'
+        },
+        {
+          text: 'I regained my confidence and learned practical tools for anxiety.',
+          author: 'M., client'
+        }
       ]
     },
+
 
     contact: {
       title: 'Get in Touch',
