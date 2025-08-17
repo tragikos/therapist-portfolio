@@ -25,15 +25,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          # cache removed because there's no lockfile
 
       - name: Install
         working-directory: ./therapist-portfolio
         run: npm install --no-audit --no-fund
 
-      - name: Build
+      - name: Build (relative base for GH Pages)
         working-directory: ./therapist-portfolio
-        run: npm run build
+        run: npm run build:gh
+
+      - name: Verify built asset paths
+        run: |
+          echo "Checking asset links in dist/index.html"
+          grep -n "assets/" therapist-portfolio/dist/index.html || true
+          head -n 50 therapist-portfolio/dist/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
