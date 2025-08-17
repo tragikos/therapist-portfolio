@@ -25,11 +25,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
+          # cache removed because there's no lockfile
 
       - name: Install
         working-directory: ./therapist-portfolio
-        run: npm ci
+        run: npm install --no-audit --no-fund
 
       - name: Build
         working-directory: ./therapist-portfolio
